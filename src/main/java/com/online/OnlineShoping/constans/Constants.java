@@ -4,6 +4,7 @@ public class Constants {
 	private Constants() {}
 
     public static final String USER_NOT_FOUND = "There is No user created so far";
+    public static final String PRODUCT_NOT_FOUND = "Product Not Found";
     public static final String LOGIN_SUCCESSFUL = "Login successful!";
     public static final String INVALID_USER = "User does not exist";
 	public static final String SUCCESSFUL_REGISTERED = "User registered successfully!";

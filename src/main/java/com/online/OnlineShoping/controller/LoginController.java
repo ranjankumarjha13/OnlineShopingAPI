@@ -28,14 +28,10 @@ public class LoginController {
 	@PostMapping(value = "/login", consumes = "application/json", produces = "application/json")
 	public ResponseEntity<?> validateUser(@RequestBody LoginRequest request) {
 		Optional<User> user = userService.validateUser(request.getUsername(), request.getPassword());
-		Map<String, Object> response = new HashMap<>();
 		if (user.isPresent()) {
-			response.put("message", Constants.LOGIN_SUCCESSFUL);
-			response.put("user", user.get());
-			return ResponseEntity.ok(response);
+			return ResponseEntity.ok(user);
 		} else {
-			response.put("message", Constants.INVALID_USER);
-			return ResponseEntity.ok(response);
+			return ResponseEntity.ok(Constants.INVALID_USER);
 		}
 	}
 	

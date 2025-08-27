@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.online.OnlineShoping.constans.Constants;
+import com.online.OnlineShoping.model.Product;
 import com.online.OnlineShoping.model.User;
+import com.online.OnlineShoping.services.ProductService;
 import com.online.OnlineShoping.services.UserService;
 
 @RestController
@@ -20,6 +22,10 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private ProductService productService;
+	
 
 	@GetMapping(value = "/fetchusers", produces = "application/json")
 	public ResponseEntity<?> fetchAllUsers() {
@@ -28,6 +34,15 @@ public class UserController {
 			return ResponseEntity.ok(userList);
 		}
 		return ResponseEntity.ok().body(Constants.USER_NOT_FOUND);
+		
+	}
+	@GetMapping(value = "/fetchproduct", produces = "application/json")
+	public ResponseEntity<?> fetchAllProduct() {
+		 List<Product> productList=productService.getProductDetails();
+		if(!productList.isEmpty()) {
+			return ResponseEntity.ok(productList);
+		}
+		return ResponseEntity.ok().body(Constants.PRODUCT_NOT_FOUND);
 		
 	}
 
