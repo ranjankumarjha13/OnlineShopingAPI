@@ -16,10 +16,6 @@ import com.online.OnlineShoping.model.LoginRequest;
 import com.online.OnlineShoping.model.User;
 import com.online.OnlineShoping.services.UserService;
 
-/**
- * @author ranja
- *
- */
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = "http://localhost:4200")
