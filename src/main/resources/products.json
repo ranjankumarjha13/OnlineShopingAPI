@@ -1,0 +1,20 @@
+[
+    {
+        "productId": "P1001",
+        "productName": "Red Chilli Pickles",
+        "productImage": "assets/redchillimg.webp",
+        "productPrice": "99"
+    },
+    {
+        "productId": "P1002",
+        "productName": "Mango Pickle",
+        "productImage": "assets/mangoimg.webp",
+        "productPrice": "999"
+    },
+    {
+        "productId": "P1003",
+        "productName": "Home Made Spices",
+        "productImage": "assets/allspices.webp",
+        "productPrice": "850"
+    }
+]
