@@ -15,18 +15,19 @@ import com.online.OnlineShoping.repositry.UserRepository;
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
-    private UserRepository userRepository;
+	private UserRepository userRepository;
 
-    public Optional<User> validateUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, password);
-    }
- 
-    public User saveUser(User user) {
-        return userRepository.save(user);
-    }
+	public Optional<User> validateUser(String username, String password) {
+		return userRepository.findByUsernameAndPassword(username, password);
+	}
+
+	public User saveUser(User user) {
+		return userRepository.save(user);
+	}
 
 	@Override
 	public List<User> fetchAllUser() {
-		return null;
+		List<User> userList = userRepository.findAll();
+		return userList;
 	}
 }
