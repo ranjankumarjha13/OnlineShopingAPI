@@ -11,10 +11,6 @@ import org.springframework.stereotype.Service;
 import com.online.OnlineShoping.model.User;
 import com.online.OnlineShoping.repositry.UserRepository;
 
-/**
- * @author ranja
- *
- */
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
