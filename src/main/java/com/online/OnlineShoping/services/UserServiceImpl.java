@@ -3,6 +3,7 @@
  */
 package com.online.OnlineShoping.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,4 +24,9 @@ public class UserServiceImpl implements UserService {
     public User saveUser(User user) {
         return userRepository.save(user);
     }
+
+	@Override
+	public List<User> fetchAllUser() {
+		return null;
+	}
 }
