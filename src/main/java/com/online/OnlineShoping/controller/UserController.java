@@ -39,6 +39,7 @@ public class UserController {
 	@GetMapping(value = "/fetchproduct", produces = "application/json")
 	public ResponseEntity<?> fetchAllProduct() {
 		 List<Product> productList=productService.getProductDetails();
+		 System.out.println("Product related changes for Testing");
 		if(!productList.isEmpty()) {
 			return ResponseEntity.ok(productList);
 		}
