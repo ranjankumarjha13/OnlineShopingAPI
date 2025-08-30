@@ -17,4 +17,22 @@
         "productImage": "assets/allspices.webp",
         "productPrice": "850"
     }
+	{
+        "productId": "P1004",
+        "productName": "Red Chilli Pickles",
+        "productImage": "assets/redchillimg.webp",
+        "productPrice": "8767"
+    },
+    {
+        "productId": "P1005",
+        "productName": "Mango Pickle",
+        "productImage": "assets/mangoimg.webp",
+        "productPrice": "1234"
+    },
+    {
+        "productId": "P1006",
+        "productName": "Home Made Spices",
+        "productImage": "assets/allspices.webp",
+        "productPrice": "3456"
+    }
 ]
