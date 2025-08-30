@@ -33,8 +33,6 @@ public class UserController {
 		if(!userList.isEmpty()) {
 			return ResponseEntity.ok(userList);
 		}
-		System.out.println("Added by Neel");
-		
 		return ResponseEntity.ok().body(Constants.USER_NOT_FOUND);
 		
 	}
