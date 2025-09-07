@@ -25,10 +25,10 @@ public class Product {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	public String getRoductPrice() {
+	public String getProductPrice() {
 		return productPrice;
 	}
-	public void setRoductPrice(String productPrice) {
+	public void setProductPrice(String productPrice) {
 		this.productPrice = productPrice;
 	}
 	public String getProductImage() {
