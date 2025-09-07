@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import com.online.OnlineShoping.constans.Constants;
+
 @Configuration
 public class WebConfig {
 
@@ -14,8 +16,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:4200")
-                        .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+                        .allowedOrigins(Constants.FRONTEND_URL_CROSS_ORIGIN)
+                        .allowedMethods(Constants.GET_REQUEST,Constants.POST_REQUEST,Constants.PUT_REQUEST,
+                        		Constants.DELETE_REQUEST,Constants.OPTIONS_REQUEST)
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }
