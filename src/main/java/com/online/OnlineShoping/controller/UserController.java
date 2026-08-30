@@ -17,7 +17,7 @@ import com.online.OnlineShoping.services.UserService;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = Constants.FRONTEND_URL_CROSS_ORIGIN)
 public class UserController {
 	
 	@Autowired
