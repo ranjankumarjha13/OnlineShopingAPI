@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class LoginRequest {
+	//Ranjan
 
 	@JsonProperty("username")
 	private String username;
