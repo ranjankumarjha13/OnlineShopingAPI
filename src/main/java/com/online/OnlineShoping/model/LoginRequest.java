@@ -8,11 +8,11 @@ import lombok.Setter;
 @Setter
 @Getter
 public class LoginRequest {
-	
-	   @JsonProperty("username")
-	    private String username;
 
-	    public String getUsername() {
+	@JsonProperty("username")
+	private String username;
+
+	public String getUsername() {
 		return username;
 	}
 
@@ -28,6 +28,6 @@ public class LoginRequest {
 		this.password = password;
 	}
 
-		@JsonProperty("password")
-	    private String password;
+	@JsonProperty("password")
+	private String password;
 }
